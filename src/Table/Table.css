@@ -1,0 +1,108 @@
+.ReactTable .buttons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 24px;
+}
+
+.ReactTable .buttons-container mc-button {
+  margin-left: 16px;
+}
+
+.ReactTable .buttons-container mc-button > a {
+  text-decoration: none;
+  color: #353535;
+}
+
+.ReactTable .TableWrapper {
+  border: var(--mdt-core-border-width) var(--mdt-core-border-style) var(--mdt-theme-border-color);
+  border-radius: var(--mdt-core-border-radius-m);
+  overflow: auto;
+  position: relative;
+}
+
+.ReactTable .TableWrapper .with-sorter {
+  cursor: pointer;
+}
+
+.ReactTable .TableWrapper .with-sorter:hover {
+  background-color: #ededed;
+}
+
+.ReactTable .TableWrapper .loading-table {
+  opacity: 0.5;
+}
+
+.ReactTable .TableWrapper .table-header {
+  height: 40px;
+}
+
+.ReactTable .TableWrapper .table-header-column {
+  line-height: 16px;
+}
+
+.ReactTable .TableWrapper .sort-column-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ReactTable .TableWrapper .sort-column-wrapper svg {
+  margin-left: 8px;
+  min-width: 20px;
+}
+
+.ReactTable .TableWrapper .custom-body, .ReactTable .TableWrapper .custom-error {
+  position: -webkit-sticky;
+  position: sticky;
+  width: 500px;
+  margin: 50px 0;
+  left: 30%;
+}
+
+.ReactTable .TableWrapper .custom-loading {
+  position: absolute;
+  width: 500px;
+  margin: 50px auto;
+  left: 30%;
+  top: 30%;
+}
+
+.ReactTable .TableWrapper .fixed-column {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 2;
+}
+
+.ReactTable .TableWrapper .selectable-row {
+  cursor: pointer;
+}
+
+.ReactTable .TableWrapper .selectable-row.active > td {
+  background-color: #e8f6fc;
+}
+
+.ReactTable .no-padding {
+  padding: 0;
+}
+
+.ReactTable .no-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 23px;
+}
+
+.ReactTable .loading-wrapper {
+  margin: 10px;
+}
+/*# sourceMappingURL=Table.css.map */

@@ -1,0 +1,153 @@
+// @import '~@maersk-global/mds-foundations/foundations';
+
+/*
+    Note: The styles below are the extracted css from the MDS library.
+    The reason for that is mds-foundations is adding a lot of global styles which are breaking
+    the css of the whole application. Currently we are importing global styles from the 
+    smartvessels-ui library. Our plan is to migrate and start using the mds-foundation package.
+
+    TODO: Delete these styles ones we manage to import '~@maersk-global/mds-foundations/foundations'
+*/
+
+.mds-table {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+.mds-table table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.mds-table td,
+.mds-table th {
+  text-align: left;
+  vertical-align: middle;
+  line-height: var(--mdt-brand-font--default-font-line-height);
+  padding: var(--mdt-core-spacing-8px) var(--mdt-core-spacing-16px)
+    var(--mdt-core-spacing-8px) var(--mdt-core-spacing-16px);
+  font-size: 14px;
+}
+.mds-table td .mds-table__subtext,
+.mds-table th .mds-table__subtext {
+  color: var(--mdt-theme-on-background-color-hint);
+  display: block;
+  font-weight: var(--mdt-brand-font-weight-regular);
+}
+.mds-table th {
+  background-color: var(--mdt-theme-table--header-background);
+  color: var(--mdt-theme-on-background-color);
+  font-style: var(--mdt-brand-font--default--bold-font-style);
+  font-weight: var(--mdt-brand-font--default--bold-font-weight);
+}
+.mds-table td {
+  background-color: var(--mdt-theme-background-color);
+  color: var(--mdt-theme-on-background-color);
+}
+.mds-table thead tr th,
+.mds-table tbody tr td,
+.mds-table tbody tr th {
+  position: relative;
+}
+.mds-table thead tr th::after,
+.mds-table tbody tr:not(:last-child) td::after,
+.mds-table tbody tr:not(:last-child) th::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  border-bottom: var(--mdt-core-border-width) var(--mdt-core-border-style)
+    var(--mdt-theme-border-color);
+}
+.mds-table--vertical-grid-lines td:not(:last-child)::before,
+.mds-table--vertical-grid-lines th:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  border-right: var(--mdt-core-border-width) var(--mdt-core-border-style)
+    var(--mdt-theme-border-color);
+}
+.mds-table--vertical-align-top td,
+.mds-table--vertical-align-top th {
+  vertical-align: top;
+}
+.mds-table--vertical-align-baseline td,
+.mds-table--vertical-align-baseline th {
+  vertical-align: baseline;
+}
+.mds-table--vertical-align-bottom td,
+.mds-table--vertical-align-bottom th {
+  vertical-align: bottom;
+}
+.mds-table--small th,
+.mds-table--small td {
+  line-height: var(--mdt-brand-font--small-font-line-height);
+  padding: var(--mdt-core-spacing-6px) var(--mdt-core-spacing-12px)
+    var(--mdt-core-spacing-6px) var(--mdt-core-spacing-12px);
+}
+.mds-table--large th,
+.mds-table--large td {
+  padding: var(--mdt-core-spacing-12px) var(--mdt-core-spacing-24px)
+    var(--mdt-core-spacing-12px) var(--mdt-core-spacing-24px);
+}
+.mds-table--no-wrap {
+  white-space: nowrap;
+}
+.mds-table--scrollable {
+  overflow: auto;
+}
+.mds-table thead tr:first-child *:first-child {
+  border-top-left-radius: var(--mdt-core-border-radius-m) !important;
+}
+.mds-table thead tr:first-child *:last-child {
+  border-top-right-radius: var(--mdt-core-border-radius-m) !important;
+}
+.mds-table tbody tr:last-child *:first-child {
+  border-bottom-left-radius: var(--mdt-core-border-radius-m) !important;
+}
+.mds-table tbody tr:last-child *:last-child {
+  border-bottom-right-radius: var(--mdt-core-border-radius-m) !important;
+}
+.mds-table--hide-header tbody tr:first-child td,
+.mds-table--hide-header tbody tr:first-child th {
+  border-top: none;
+}
+.mds-table--hide-header tbody tr:first-child *:first-child {
+  border-top-left-radius: var(--mdt-core-border-radius-m) !important;
+}
+.mds-table--hide-header tbody tr:first-child *:last-child {
+  border-top-right-radius: var(--mdt-core-border-radius-m) !important;
+}
+.mds-table--zebra-stripes tbody tr:nth-child(even) td {
+  background-color: var(--mdt-theme-table--alt-row-background);
+}
+.mds-table--row-highlight-on-hover tbody tr:hover td {
+  background-color: var(--mdt-theme-table--row-hover);
+}
+.mds-table th.mds-text-center,
+.mds-table td.mds-text-center {
+  text-align: center;
+}
+.mds-table th.mds-text-right,
+.mds-table td.mds-text-right {
+  text-align: right;
+}
+
+// .mds-table--sticky-header thead {
+//   top: 0;
+//   position: sticky;
+//   z-index: 3;
+// }
+// .onscroll-fixed {
+//   top: 0;
+//   position: sticky;
+//   z-index: 3;
+// }
+
+.mds-rich-text .mds-table {
+  margin: var(--mdt-core-spacing-24px) 0;
+}

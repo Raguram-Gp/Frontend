@@ -1,0 +1,83 @@
+.circular_column {
+  border-radius: 120%;
+  border-color: blue;
+  border: 3px solid;
+  width: 20wh;
+  margin-right: 13vw;
+  margin-left: 13vw;
+  padding: 30px;
+}
+
+.Navbar {
+  display: flex;
+  background-color: rgb(66, 176, 213);
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1), 0 4px 15px 0 rgba(0, 0, 0, 0.08);
+  /* position: sticky !important;
+  top: 0; */
+}
+.toggle:hover {
+  transform: scale(1.00056);
+  background-color: #f7f7f7 !important;
+  border-color: #cfcfcf !important;
+  color: black !important;
+}
+
+.toggle {
+  color: white !important;
+  margin-left: 1250px;
+  background-color: transparent !important;
+
+  border-color: #cfcfcf !important;
+  align-items: center;
+}
+
+.toggle:focus {
+  box-shadow: none !important;
+}
+
+.heading-nav {
+  color: white;
+  align-items: center;
+  margin-left: 10px;
+}
+.circular_row {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  gap: 40px;
+  /* border-bottom: 1px solid; */
+}
+
+.button-card {
+  background-color: #00243d !important;
+  border-color: transparent !important;
+  font-size: x-small;
+}
+
+.button-card:hover {
+  background-color: #003d6d !important;
+}
+.button-card:focus {
+  box-shadow: none !important;
+}
+
+.card {
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.1), 0 4px 10px 0 rgba(0, 0, 0, 0.05);
+  transition: all 0.55s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.0005);
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.08),
+    0 6px 20px 0 rgba(0, 0, 0, 0.08);
+}
+
+.card-title {
+  /* font-size: 28px !important; */
+  background-color: rgb(66, 176, 213);
+  padding: 10px;
+  color: white;
+}

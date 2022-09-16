@@ -1,0 +1,112 @@
+.ReactTable {
+  .buttons-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 24px;
+
+    mc-button {
+      margin-left: 16px;
+
+      > a {
+        text-decoration: none;
+        color: #353535;
+      }
+    }
+  }
+
+  .column-head {
+    background-color: #f7f7f7;
+  }
+
+  .TableWrapper {
+    border: var(--mdt-core-border-width) var(--mdt-core-border-style)
+      var(--mdt-theme-border-color);
+    border-radius: var(--mdt-core-border-radius-m);
+    overflow: auto;
+    position: relative;
+    // width: 80vh;
+
+    .with-sorter {
+      cursor: pointer;
+
+      &:hover {
+        background-color: #ededed;
+      }
+    }
+
+    .loading-table {
+      opacity: 0.5;
+    }
+
+    .table-header {
+      height: 80px;
+    }
+
+    .table-header-column {
+      line-height: 16px;
+    }
+
+    .sort-column-wrapper {
+      display: flex;
+      align-items: center;
+
+      svg {
+        margin-left: 8px;
+        min-width: 20px;
+      }
+    }
+
+    .table-cell {
+      width: auto;
+      height: 60px;
+    }
+
+    .custom-body {
+      position: sticky;
+      width: 500px;
+      margin: 50px 0;
+      left: 30%;
+    }
+
+    .custom-error {
+      @extend .custom-body;
+    }
+
+    // Loading indicator with data in the table
+    .custom-loading {
+      position: absolute;
+      width: 500px;
+      margin: 50px auto;
+      left: 30%;
+      top: 30%;
+    }
+
+    .fixed-column {
+      position: sticky;
+      z-index: 2;
+    }
+
+    .selectable-row {
+      cursor: pointer;
+
+      &.active > td {
+        background-color: #e8f6fc;
+      }
+    }
+  }
+
+  // Remove extra padding on cells
+  .no-padding {
+    padding: 0;
+  }
+
+  .no-data {
+    display: flex;
+    justify-content: center;
+    margin: 23px;
+  }
+
+  .loading-wrapper {
+    margin: 10px;
+  }
+}

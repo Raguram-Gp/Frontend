@@ -1,0 +1,70 @@
+.Report_row {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10vh 20px 30px 10px;
+}
+.heading {
+  text-align: left;
+  border-bottom: 3px solid rgb(66, 176, 213) !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 5px 35px 10px 35px;
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Filtering {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.datePicker {
+  max-width: 15vw;
+}
+.button {
+  background-color: transparent !important;
+  font-size: smaller !important;
+  color: #353535 !important;
+  border-color: #cfcfcf !important;
+}
+.button:focus {
+  box-shadow: none !important;
+}
+.search {
+  justify-content: center !important;
+  /* width: 100% !important; */
+  /* margin: 10px; */
+}
+.svg-button {
+  background-color: transparent !important;
+  font-size: smaller !important;
+  color: #353535 !important;
+  border-color: transparent !important;
+}
+
+.svg-button:focus {
+  box-shadow: none !important;
+}
+
+.svg-button:hover {
+  transform: scale(1.5);
+}
+
+.button:hover {
+  transform: scale(1.00056);
+  background-color: #f7f7f7 !important;
+  border-color: #cfcfcf !important;
+}
+
+.table {
+  padding: 20px;
+}
+
+.svg {
+  color: #353535;
+}
